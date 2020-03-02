@@ -1,39 +1,6 @@
-class Dog
-    puts "haha.. I fooled you...."
-    # attr_reader :type
-    # attr_writer :type
+require "./dog.rb"
+require "./small_dog.rb"
 
-    attr_reader :id
-    attr_accessor :type, :home
-
-
-    # getter
-    def name
-        @name
-    end
-
-    # setter
-    def name=value
-        @name = value
-    end
-    
-    def initialize
-        @name = "noname"
-        @id = "xxxx"
-        puts "Creating #{@name} object"
-    end
-    def bark
-        "#{@name} barks loudly"
-    end
-
-    def feed (food)
-        if food == "biscuit"
-            bark
-        else
-           "Dog is beign fed with #{food}"
-        end
-    end
-end
 
 dog1 = Dog.new
 
@@ -52,3 +19,7 @@ dog1.type = "type1"
 puts dog1.type
 
 puts dog1.id
+
+sdog1 = SmallDog.new
+puts sdog1.bark
+
