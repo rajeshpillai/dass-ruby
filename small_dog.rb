@@ -1,4 +1,4 @@
-require "./dog.rb"
+# require "./dog.rb"
 
 # Inheritance
 class SmallDog < Dog
